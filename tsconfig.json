@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "strict": true,
+    "target": "es2017",
+    "types": ["./src/typings", "jest"],
+    "downlevelIteration": true,
+    "lib": ["es2015", "es2017"],
+    "moduleResolution": "node",
+    "esModuleInterop": true
+  }
+}
