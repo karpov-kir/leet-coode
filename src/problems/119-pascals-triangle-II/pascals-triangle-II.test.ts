@@ -1,6 +1,7 @@
 import { prepareSolutionsAndTestCases } from '../../utils';
 import { getRow as getRowIterativeApproach } from './pascals-triangle-II-iterative-approach';
 import { getRow as getRowIterativeMemoryEfficientApproach } from './pascals-triangle-II-iterative-memory-efficient-approach';
+import { getRow as getRowMathematicalApproach } from './pascals-triangle-II-mathematical-approach';
 import { getRow as getRowRecursiveApproach } from './pascals-triangle-II-recursive-approach';
 
 const { solutions, testCasesAndExpectedResults } = prepareSolutionsAndTestCases(
@@ -16,6 +17,10 @@ const { solutions, testCasesAndExpectedResults } = prepareSolutionsAndTestCases(
     {
       solution: getRowIterativeMemoryEfficientApproach,
       name: "Pascal's triangle II (iterative memory efficient approach)",
+    },
+    {
+      solution: getRowMathematicalApproach,
+      name: "Pascal's triangle II (mathematical approach)",
     },
   ],
   [
