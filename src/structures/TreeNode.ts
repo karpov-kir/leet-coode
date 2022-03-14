@@ -56,17 +56,14 @@ export class TreeNode {
       result += `${defaultOffset}root:`;
     }
 
-    if (this.left && this.right) {
-      result += `${this.val}\n${offset}left:${this.left.toString(
-        defaultOffset,
-        level,
-      )}\n${offset}right:${this.right.toString(defaultOffset, level)}`;
-    } else if (this.left) {
-      result += `${this.val}\n${offset}left:${this.left.toString(defaultOffset, level)}`;
-    } else if (this.right) {
-      result += `${this.val}\n${offset}right:${this.right.toString(defaultOffset, level)}`;
-    } else {
-      result += this.val.toString();
+    result += this.val.toString();
+
+    if (this.left) {
+      result += `\n${offset}left:${this.left.toString(defaultOffset, level)}`;
+    }
+
+    if (this.right) {
+      result += `\n${offset}right:${this.right.toString(defaultOffset, level)}`;
     }
 
     if (isRootLevel) {
